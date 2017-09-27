@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="isam_pose" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="isam_pose" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="isam_pose" targetName="tf_generate_messages_cpp" />
+      <config projectName="isam_pose" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="isam_pose" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="isam_pose" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="isam_pose" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="isam_pose" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="isam_pose" targetName="apriltags_generate_messages_cpp" />
+      <config projectName="isam_pose" targetName="apriltags_generate_messages_nodejs" />
+      <config projectName="isam_pose" targetName="actionlib_generate_messages_cpp" />
+      <config projectName="isam_pose" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="isam_pose" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="isam_pose" targetName="std_msgs_generate_messages_py" />
+      <config projectName="isam_pose" targetName="apriltags_generate_messages_py" />
+      <config projectName="isam_pose" targetName="tf2_msgs_generate_messages_cpp" />
+      <config projectName="isam_pose" targetName="roscpp_generate_messages_eus" />
+      <config projectName="isam_pose" targetName="tf_generate_messages_lisp" />
+      <config projectName="isam_pose" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="isam_pose" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="isam_pose" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="isam_pose" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="isam_pose" targetName="tf2_msgs_generate_messages_py" />
+      <config projectName="isam_pose" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="isam_pose" targetName="tf_generate_messages_py" />
+      <config projectName="isam_pose" targetName="clean_test_results" />
+      <config projectName="isam_pose" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="isam_pose" targetName="actionlib_generate_messages_nodejs" />
+      <config projectName="isam_pose" targetName="roscpp_generate_messages_py" />
+      <config projectName="isam_pose" targetName="tf2_msgs_generate_messages_lisp" />
+      <config projectName="isam_pose" targetName="gtest_main" />
+      <config projectName="isam_pose" targetName="isam_pose" />
+      <config projectName="isam_pose" targetName="doxygen" />
+      <config projectName="isam_pose" targetName="actionlib_generate_messages_py" />
+      <config projectName="isam_pose" targetName="apriltags_generate_messages_lisp" />
+      <config projectName="isam_pose" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="isam_pose" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="isam_pose" targetName="actionlib_generate_messages_eus" />
+      <config projectName="isam_pose" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="isam_pose" targetName="gtest" />
+      <config projectName="isam_pose" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="isam_pose" targetName="tests" />
+      <config projectName="isam_pose" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="isam_pose" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="isam_pose" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="isam_pose" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="isam_pose" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="isam_pose" targetName="apriltags_generate_messages_eus" />
+      <config projectName="isam_pose" targetName="tf_generate_messages_eus" />
+      <config projectName="isam_pose" targetName="tf2_msgs_generate_messages_nodejs" />
+      <config projectName="isam_pose" targetName="run_tests" />
+      <config projectName="isam_pose" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="isam_pose" targetName="download_extra_data" />
+      <config projectName="isam_pose" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="isam_pose" targetName="tf2_msgs_generate_messages_eus" />
+      <config projectName="isam_pose" targetName="tf_generate_messages_nodejs" />
+      <config projectName="isam_pose" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="isam_pose" targetName="std_msgs_generate_messages_eus" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="08d76b32-ebc4-48b5-8a3a-9722ee58f7d2" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="isam_pose" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="isam_pose_param.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isam_pose_param.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="isam_pose_param.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/isam_pose_param.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="20" />
+              <folding>
+                <element signature="e#112#134#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="push_measurement.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/push_measurement.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="161" column="16" lean-forward="false" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="isam_pose.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/isam_pose.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+              <folding>
+                <element signature="e#113#145#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sp_util.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/sp_util.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="95" column="103" lean-forward="false" selection-start-line="95" selection-start-column="103" selection-end-line="95" selection-end-column="103" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="isam_pose_logger.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isam_pose_logger.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2760">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="isam_pose_logger.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/isam_pose_logger.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sp_util.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sp_util.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1058">
+              <caret line="266" column="9" lean-forward="false" selection-start-line="266" selection-start-column="9" selection-end-line="266" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#2#0" expanded="false" />
+                <element signature="e#38#58#0" expanded="true" />
+                <element signature="e#295#836#0" expanded="false" />
+                <element signature="e#1496#1802#0" expanded="false" />
+                <element signature="e#1804#2243#0" expanded="false" />
+                <element signature="e#2245#2524#0" expanded="false" />
+                <element signature="e#2526#2829#0" expanded="false" />
+                <element signature="e#2831#3128#0" expanded="false" />
+                <element signature="e#3130#3573#0" expanded="false" />
+                <element signature="e#3575#3883#0" expanded="false" />
+                <element signature="e#3885#4205#0" expanded="false" />
+                <element signature="e#4207#4295#0" expanded="false" />
+                <element signature="e#4297#4385#0" expanded="false" />
+                <element signature="e#4387#4479#0" expanded="false" />
+                <element signature="e#4481#4680#0" expanded="false" />
+                <element signature="e#4682#4961#0" expanded="false" />
+                <element signature="e#4963#5068#0" expanded="false" />
+                <element signature="e#7190#7226#0" expanded="false" />
+                <element signature="e#7228#7269#0" expanded="false" />
+                <element signature="e#7271#7395#0" expanded="false" />
+                <element signature="e#7397#7491#0" expanded="false" />
+                <element signature="e#7493#7843#0" expanded="false" />
+                <element signature="e#7845#8086#0" expanded="false" />
+                <element signature="e#8088#8491#0" expanded="false" />
+                <element signature="e#8493#8565#0" expanded="false" />
+                <element signature="e#8567#8748#0" expanded="false" />
+                <element signature="e#8750#9046#0" expanded="false" />
+                <element signature="e#9048#9134#0" expanded="false" />
+                <element signature="e#9136#9198#0" expanded="false" />
+                <element signature="e#9136#9315#0" expanded="false" />
+                <element signature="e#9435#9558#0" expanded="false" />
+                <element signature="e#9559#10374#0" expanded="false" />
+                <element signature="e#9581#10346#0" expanded="false" />
+                <element signature="e#9644#10050#1" expanded="false" />
+                <element signature="e#10181#10339#1" expanded="false" />
+                <element signature="e#10245#10336#1" expanded="false" />
+                <element signature="e#10375#10397#0" expanded="false" />
+                <element signature="e#10467#11851#0" expanded="false" />
+                <element signature="e#11853#12247#0" expanded="false" />
+                <element signature="e#12249#12498#0" expanded="false" />
+                <element signature="e#12500#12579#0" expanded="false" />
+                <element signature="e#12699#12813#0" expanded="false" />
+                <element signature="e#12815#12918#0" expanded="false" />
+                <element signature="e#12920#13043#0" expanded="false" />
+                <element signature="e#13045#13262#0" expanded="false" />
+                <element signature="e#13351#13442#0" expanded="false" />
+                <element signature="e#13444#13550#0" expanded="false" />
+                <element signature="e#13552#13660#0" expanded="false" />
+                <element signature="e#13662#13878#0" expanded="false" />
+                <element signature="e#13880#13954#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>parse_jsonval_into_vector</find>
+      <find>sleep</find>
+      <find>pk</find>
+      <find>add</find>
+      <find>stationary</find>
+      <find>label</find>
+      <find>cout</find>
+      <find>shape_id</find>
+      <find>updateApriltag</find>
+      <find>read_from_rosmsg</find>
+      <find>april</find>
+      <find>butter</find>
+      <find>noise3_pose_rel_mat &lt;&lt; 1, 0,     0,</find>
+      <find>pose_prior_factor-&gt;set_cost_function(&amp;cam_cost_func);</find>
+      <find>has_contact</find>
+      <find>cout &lt;&lt; updated_apriltag</find>
+      <find>init_shape_data</find>
+      <find>if(t&gt;0)</find>
+      <find>set_cost_function</find>
+      <find>remove_node</find>
+      <find>PushWForceMeasurement_Factor *motion_factor = NULL;</find>
+      <find>PushWForceMeasurement_Factor</find>
+      <find>npa</find>
+      <find>Rodr</find>
+      <find>head_camera</find>
+      <find>max</find>
+      <find>outfilename</find>
+      <find>tag_obj</find>
+      <find>vc</find>
+      <find>vectorVector_to_json</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>isam_param-&gt;</replace>
+      <replace>VectorXd</replace>
+      <replace>vecVec</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/RosMsgBuffer.cpp" />
+        <option value="$PROJECT_DIR$/include/RosMsgBuffer.h" />
+        <option value="$PROJECT_DIR$/src/isam_pose_old.cpp.cpp" />
+        <option value="$PROJECT_DIR$/src/p_poly_dist.cpp" />
+        <option value="$PROJECT_DIR$/include/p_poly_dist.h" />
+        <option value="$PROJECT_DIR$/include/isam_pose_logger.cpp" />
+        <option value="$PROJECT_DIR$/include/shape_db_butter_shape.h" />
+        <option value="$PROJECT_DIR$/src/isam_pose_logger.cpp" />
+        <option value="$PROJECT_DIR$/src/Feeder.h" />
+        <option value="$PROJECT_DIR$/include/Feeder.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/Feeder.cpp" />
+        <option value="$PROJECT_DIR$/include/contact_measurement.h" />
+        <option value="$PROJECT_DIR$/include/push_measurement.h" />
+        <option value="$PROJECT_DIR$/../pnpush_planning/src/calibration/calib3d2d.py" />
+        <option value="$PROJECT_DIR$/src/isam_pose_param.cpp" />
+        <option value="$PROJECT_DIR$/include/isam_pose_param.h" />
+        <option value="$PROJECT_DIR$/include/isam_pose_logger.h" />
+        <option value="$PROJECT_DIR$/src/sp_util.cpp" />
+        <option value="$PROJECT_DIR$/include/sp_util.h" />
+        <option value="$PROJECT_DIR$/src/isam_pose.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1205" />
+    <option name="y" value="95" />
+    <option name="width" value="1920" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isam_pose" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isam_pose" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isam_pose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isam_pose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isam_pose" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isam_pose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isam_pose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isam_pose" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isam_pose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isam_pose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isam_pose" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isam_pose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/mcube/push/catkin_ws/src/isam_pose/src/isam_pose.cpp&#10;Pose2d_Node&#9;null&#9;null" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pnpush_planning/src/calibration/calib3d2d.py" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="isam_pose">
+        <envs>
+          <env key="PYTHONPATH" value="/home/mcube/push/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/kinetic/lib/python2.7/dist-packages:/home/mcube/push/software/build/lib/python2.7/site-packages:/home/mcube/push/software/build/lib/python2.7/dist-packages:/home/mcube/push/software/build/lib/python2.7/site-packages:/home/mcube/push/software/build/lib/python2.7/dist-packages:/home/mcube/push/software/build/lib/python2.7/site-packages:/home/mcube/push/software/build/lib/python2.7/dist-packages" />
+        </envs>
+        <option name="myModuleName" value="isam_pose" />
+        <option name="myEnvs">
+          <map>
+            <entry key="PYTHONPATH" value="$PROJECT_DIR$/../../devel/lib/python2.7/dist-packages:/opt/ros/kinetic/lib/python2.7/dist-packages:/home/mcube/push/software/build/lib/python2.7/site-packages:/home/mcube/push/software/build/lib/python2.7/dist-packages:/home/mcube/push/software/build/lib/python2.7/site-packages:/home/mcube/push/software/build/lib/python2.7/dist-packages:/home/mcube/push/software/build/lib/python2.7/site-packages:/home/mcube/push/software/build/lib/python2.7/dist-packages" />
+          </map>
+        </option>
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/include" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.rect1">
+    <configuration default="true" type="CLion_Remote" factoryName="GDB Remote Debug" remoteCommand="" symbolFile="" sysroot="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="FirefoxRemoteDebugType" factoryName="Firefox Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeWebKit" factoryName="NW.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../pnpush_planning/src/calibration" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="isam_pose" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pnpush_planning/src/calibration/calib3d2d.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ReactNative" factoryName="React Native">
+      <node-interpreter value="project" />
+      <platform value="ANDROID" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="isam_pose" />
+      <method />
+    </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="isam_pose" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="isam_pose" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="isam_pose" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="isam_pose" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ellip2-json" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="--shape-id ellip2 --label ellip2 --maxstep 1000 --jsonin /home/mcube/pushdata/result/shapeRecon-20170503_085949_824-isam-multipush_shape=ellip2_surface=plywood_rep=0000-ellip2no-contact.json" PASS_PARENT_ENVS_2="true" PROJECT_NAME="isam_pose" TARGET_NAME="isam_pose" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="isam_pose" RUN_TARGET_NAME="isam_pose">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ellip2" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="--shape-id ellip2 --label ellip2" PASS_PARENT_ENVS_2="true" PROJECT_NAME="isam_pose" TARGET_NAME="isam_pose" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="isam_pose" RUN_TARGET_NAME="isam_pose">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="butter" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="--shape-id butter --label butter" PASS_PARENT_ENVS_2="true" PROJECT_NAME="isam_pose" TARGET_NAME="isam_pose" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="isam_pose" RUN_TARGET_NAME="isam_pose">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="rect1-json" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="--jsonin /home/mcube/pushdata/result/shapeRecon-20170423_001606_956-isam-multipush_shape=rect1_surface=plywood_rep=0000.json" PASS_PARENT_ENVS_2="true" PROJECT_NAME="isam_pose" TARGET_NAME="isam_pose" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="isam_pose" RUN_TARGET_NAME="isam_pose">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="rect1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="--shape-id rect1 --label rect1" PASS_PARENT_ENVS_2="true" PROJECT_NAME="isam_pose" TARGET_NAME="isam_pose" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="isam_pose" RUN_TARGET_NAME="isam_pose">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="calib3d2d" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../pnpush_planning/src/calibration" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="isam_pose" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pnpush_planning/src/calibration/calib3d2d.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="rect1-json-var" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="--jsonin /home/mcube/pushdata/result/shapeRecon-20170423_001606_956-isam-multipush_shape=rect1_surface=plywood_rep=0000.json --var" PASS_PARENT_ENVS_2="true" PROJECT_NAME="isam_pose" TARGET_NAME="isam_pose" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="isam_pose" RUN_TARGET_NAME="isam_pose">
+      <envs />
+      <method />
+    </configuration>
+    <list size="8">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ellip2-json" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ellip2" />
+      <item index="3" class="java.lang.String" itemvalue="Application.butter" />
+      <item index="4" class="java.lang.String" itemvalue="Application.rect1-json" />
+      <item index="5" class="java.lang.String" itemvalue="Application.rect1" />
+      <item index="6" class="java.lang.String" itemvalue="Python.calib3d2d" />
+      <item index="7" class="java.lang.String" itemvalue="Application.rect1-json-var" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08d76b32-ebc4-48b5-8a3a-9722ee58f7d2" name="Default" comment="" />
+      <created>1491258329605</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1491258329605</updated>
+      <workItem from="1491258331056" duration="42144000" />
+      <workItem from="1491590131128" duration="62277000" />
+      <workItem from="1492221860837" duration="7869000" />
+      <workItem from="1492291693032" duration="16217000" />
+      <workItem from="1492398232966" duration="26171000" />
+      <workItem from="1492549626039" duration="31974000" />
+      <workItem from="1492990865261" duration="8863000" />
+      <workItem from="1493129538052" duration="4872000" />
+      <workItem from="1493769218911" duration="14869000" />
+      <workItem from="1493904264349" duration="21785000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="237041000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1205" y="95" width="1920" height="1056" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853982" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3949115" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2950644" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3842932" sideWeight="0.50208336" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853982" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32725322" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18516542" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34012875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2864807" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24971232" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33485195" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2950644" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3842932" sideWeight="0.50208336" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.123883925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.117610455" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24971232" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34012875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30855855" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="22" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/include/isam/Anchor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/eigen3/Eigen/src/Core/Product.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/bits/vector.tcc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="433" column="0" lean-forward="false" selection-start-line="433" selection-start-column="0" selection-end-line="433" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/bits/stl_bvector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/EllipsoidApproxLimitSurface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../devel/include/apriltags/AprilTagDetections.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/RosMsgBuffer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5064">
+          <caret line="213" column="10" lean-forward="false" selection-start-line="213" selection-start-column="10" selection-end-line="213" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../abb-ros-catkin/matVec/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../abb-ros-catkin/matVec/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/include/isam/Jacobian.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="72" column="6" lean-forward="false" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/include/isam/robust.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/include/isam/Element.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/include/isam/numericalDiff.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EllipsoidApproxLimitSurface.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="231" column="0" lean-forward="true" selection-start-line="231" selection-start-column="0" selection-end-line="232" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/build/include/cppad/core/jacobian.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="199" column="20" lean-forward="false" selection-start-line="199" selection-start-column="20" selection-end-line="199" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/p_poly_dist.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="253" column="0" lean-forward="false" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/eigen3/Eigen/src/Core/Block.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/eigen3/Eigen/src/Core/DenseStorage.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="536" column="0" lean-forward="false" selection-start-line="536" selection-start-column="0" selection-end-line="536" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/isamlib/covariance.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/isamlib/Covariances.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/isamlib/SparseVector.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isam_pose_old.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="33" column="53" lean-forward="false" selection-start-line="33" selection-start-column="53" selection-end-line="34" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/include/isam/Node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="121" column="7" lean-forward="false" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/boost/program_options/detail/parsers.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2760">
+          <caret line="117" column="4" lean-forward="false" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/eigen3/Eigen/Core">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/eigen3/Eigen/Geometry">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/eigen3/Eigen/Dense">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/include/isam/Pose2d.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/include/isam/slam2d.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="97" column="47" lean-forward="false" selection-start-line="97" selection-start-column="41" selection-end-line="97" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Feeder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="72" lean-forward="false" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Feeder.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="69" column="21" lean-forward="false" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/isamlib/Optimizer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="226" column="0" lean-forward="false" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/isamlib/Slam.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3288">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/contact_measurement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.CLion2017.1/idea.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/isamlib/SparseSystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pnpush_planning/src/calibration/calib3d2d.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="33" />
+          <folding>
+            <element signature="e#22#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/include/isam/Slam.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="125" column="7" lean-forward="false" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/externals/isam_v1_7/include/isam/Factor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="124" column="27" lean-forward="false" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../software/build/include/cppad/utility/error_handler.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isam_pose_param.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/isam_pose_param.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="e#112#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/push_measurement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="161" column="16" lean-forward="false" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isam_pose_logger.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2760">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/isam_pose_logger.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sp_util.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1058">
+          <caret line="266" column="9" lean-forward="false" selection-start-line="266" selection-start-column="9" selection-end-line="266" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#2#0" expanded="false" />
+            <element signature="e#38#58#0" expanded="true" />
+            <element signature="e#295#836#0" expanded="false" />
+            <element signature="e#1496#1802#0" expanded="false" />
+            <element signature="e#1804#2243#0" expanded="false" />
+            <element signature="e#2245#2524#0" expanded="false" />
+            <element signature="e#2526#2829#0" expanded="false" />
+            <element signature="e#2831#3128#0" expanded="false" />
+            <element signature="e#3130#3573#0" expanded="false" />
+            <element signature="e#3575#3883#0" expanded="false" />
+            <element signature="e#3885#4205#0" expanded="false" />
+            <element signature="e#4207#4295#0" expanded="false" />
+            <element signature="e#4297#4385#0" expanded="false" />
+            <element signature="e#4387#4479#0" expanded="false" />
+            <element signature="e#4481#4680#0" expanded="false" />
+            <element signature="e#4682#4961#0" expanded="false" />
+            <element signature="e#4963#5068#0" expanded="false" />
+            <element signature="e#7190#7226#0" expanded="false" />
+            <element signature="e#7228#7269#0" expanded="false" />
+            <element signature="e#7271#7395#0" expanded="false" />
+            <element signature="e#7397#7491#0" expanded="false" />
+            <element signature="e#7493#7843#0" expanded="false" />
+            <element signature="e#7845#8086#0" expanded="false" />
+            <element signature="e#8088#8491#0" expanded="false" />
+            <element signature="e#8493#8565#0" expanded="false" />
+            <element signature="e#8567#8748#0" expanded="false" />
+            <element signature="e#8750#9046#0" expanded="false" />
+            <element signature="e#9048#9134#0" expanded="false" />
+            <element signature="e#9136#9198#0" expanded="false" />
+            <element signature="e#9136#9315#0" expanded="false" />
+            <element signature="e#9435#9558#0" expanded="false" />
+            <element signature="e#9559#10374#0" expanded="false" />
+            <element signature="e#9581#10346#0" expanded="false" />
+            <element signature="e#9644#10050#1" expanded="false" />
+            <element signature="e#10181#10339#1" expanded="false" />
+            <element signature="e#10245#10336#1" expanded="false" />
+            <element signature="e#10375#10397#0" expanded="false" />
+            <element signature="e#10467#11851#0" expanded="false" />
+            <element signature="e#11853#12247#0" expanded="false" />
+            <element signature="e#12249#12498#0" expanded="false" />
+            <element signature="e#12500#12579#0" expanded="false" />
+            <element signature="e#12699#12813#0" expanded="false" />
+            <element signature="e#12815#12918#0" expanded="false" />
+            <element signature="e#12920#13043#0" expanded="false" />
+            <element signature="e#13045#13262#0" expanded="false" />
+            <element signature="e#13351#13442#0" expanded="false" />
+            <element signature="e#13444#13550#0" expanded="false" />
+            <element signature="e#13552#13660#0" expanded="false" />
+            <element signature="e#13662#13878#0" expanded="false" />
+            <element signature="e#13880#13954#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/sp_util.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="95" column="103" lean-forward="false" selection-start-line="95" selection-start-column="103" selection-end-line="95" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isam_pose.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <folding>
+            <element signature="e#113#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

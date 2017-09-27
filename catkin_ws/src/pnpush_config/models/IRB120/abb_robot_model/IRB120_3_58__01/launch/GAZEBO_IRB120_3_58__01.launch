@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="true" />
+  </include>
+  <param name="IRB120_3_58__01_description" command="$(find xacro)/xacro.py $(find abb_robot_models)/xacro/IRB120_3_58__01.xacro"/>
+  <node name="IRB120_3_58__01_spawn" pkg="gazebo_ros" type="spawn_model" args="-urdf -param IRB120_3_58__01_description -model IRB120_3_58__01 -x 0 -y 0 -z 0" respawn="false"/>
+</launch>

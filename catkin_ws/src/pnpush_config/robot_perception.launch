@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<launch>
+  <arg name="gui" default="true" />
+  <arg name="have_robot" default="true" />
+  
+  <arg name="irb_120" default="true" />
+  
+  <param name="use_gui" value="$(arg gui)"/>
+  <param name="robot_description" textfile="$(find pnpush_config)/models/IRB120/irb_120.urdf" />
+    
+  <node if="$(arg irb_120)" pkg="tf" type="static_transform_publisher" name="baselink_broadcaster" args="0 0 0.60 0 1.57079632679 0 map base_link 100" />
+  
+
+  <node unless="$(arg have_robot)" name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+    <rosparam unless="$(arg have_robot)" command="load" file="$(find pnpush_config)/source_list_param.yaml" />
+  </node>
+  
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" />
+
+  <node pkg="tf" type="static_transform_publisher" name="viconworldlink_broadcaster" 
+  args="3.40845868e-01 -5.20755149e-02 2.03585771e-02 -3.61770065e-03 2.48797284e-03 -1.04538304e-03 9.99989815e-01 /map /viconworld 100" />
+
+  <node pkg="tf" type="static_transform_publisher" name="vicontip_broadcaster" args="0 0 0.223 0 0 0 /link_6 /vicon_tip 100" /> <!-- for transferring calib tip to link6-->
+  <node pkg="tf" type="static_transform_publisher" name="link_ft_broadcaster" args="0 0 0.04703 0 0 0 /link_6 /link_ft 100" /> <!-- hack for bad kinetic bug in broadcasting fixed transform in URDF -->
+
+  <node pkg="usb_cam" type="usb_cam_node" name="usb_cam_node"> 
+      <param name="camera_info_url" value="package://usb_cam/calibrations/usb_cam.yaml" />
+  </node>
+
+  <node name="usb_cam_tf" pkg="tf" type="static_transform_publisher" args="7.66409412e-01 -1.57527919e-01 5.37305513e-01 6.96079649e-01 6.52392338e-01 -1.68377174e-01 -2.48005013e-01 /map /head_camera 100" />
+  
+  <node name="apriltag0_vicon" pkg="tf" type="static_transform_publisher" args="-0.02 -0.02 -0.009 0 0 0 /vicon/StainlessSteel/StainlessSteel /apriltag0_vicon 100" />
+
+</launch>

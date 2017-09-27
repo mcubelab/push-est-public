@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="JOINT" params="name type xyz rpy axis effort velocity lower upper parent child">
+    <joint name="${name}" type="${type}">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <axis xyz="${axis}"/>
+      <limit effort="${effort}" velocity="${velocity}" lower="${lower}" upper="${upper}" />
+      <parent link="${parent}"/>
+      <child link="${child}"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="FIXED_JOINT" params="name xyz rpy parent child">
+    <joint name="${name}" type="fixed">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <parent link="${parent}"/>
+      <child link="${child}"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="CONTINUOUS_JOINT" params="name xyz rpy axis parent child">
+    <joint name="${name}" type="continuous">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <axis xyz="${axis}"/>
+      <parent link="${parent}"/>
+      <child link="${child}"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="CONTINUOUS_JOINT_MIMIC" params="name xyz rpy axis parent child mimic_joint mimic_multiplier mimic_offset">
+    <joint name="${name}" type="continuous">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <axis xyz="${axis}"/>
+      <parent link="${parent}"/>
+      <child link="${child}"/>
+      <mimic joint="${mimic_joint}" multiplier="${mimic_multiplier}" offset="${mimic_offset}"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="FIX_BASE" params="child xyz rpy">
+    <link name="world"/>
+    <joint name="fixed_base_joint" type="fixed">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <parent link="world"/>
+      <child link="${child}"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="FIX_TOOL0" params="parent xyz rpy">
+    <link name="tool0"/>
+    <joint name="fixed_tool0_joint" type="fixed">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <parent link="${parent}"/>
+      <child link="tool0"/>
+    </joint>
+  </xacro:macro>
+
+</robot>
+

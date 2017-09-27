@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<launch>
+  <arg name="gui" default="true" />
+  <arg name="have_robot" default="true" />
+  
+  <arg name="irb_120" default="true" />
+  
+  <param name="use_gui" value="$(arg gui)"/>
+  <param name="robot_description" command="$(find xacro)/xacro.py $(find pnpush_config)/models/IRB120/irb_120_twofinger_hollowgripper.xacro" />
+<!--
+  <param name="robot_description" textfile="$(find pnpush_config)/models/IRB120/irb_120.urdf" />
+-->
+    
+  <node if="$(arg irb_120)" pkg="tf" type="static_transform_publisher" name="baselink_broadcaster" args="0 0 0.60 0 1.57079632679 0 map base_link 100" />
+  
+
+  <node unless="$(arg have_robot)" name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+    <rosparam unless="$(arg have_robot)" command="load" file="$(find pnpush_config)/source_list_param.yaml" />
+  </node>
+  
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" />
+
+  <node pkg="tf" type="static_transform_publisher" name="viconworldlink_broadcaster" 
+  args="3.27948732e-01 -5.81676778e-02 1.79264535e-02 -2.91529205e-03 6.76893196e-05 1.05700314e-02 9.99939884e-01 /map /viconworld 100" />
+
+  <node pkg="tf" type="static_transform_publisher" name="vicontip_broadcaster" args="0 0 0.1726 0 0 0 /link_6 /vicon_tip 100" /> <!-- for transferring calib tip to link6 0.223--> 
+  <node pkg="tf" type="static_transform_publisher" name="cross_tip_broadcaster" args="0 0 0.14494 0 0 0 /link_6 /cross_tip 100" /> <!-- for transferring calib tip to link6-->
+  <node pkg="tf" type="static_transform_publisher" name="link_ft_broadcaster" args="0 0 0.04703 0 0 0 /link_6 /link_ft 100" /> <!-- hack for bad kinetic bug in broadcasting fixed transform in URDF -->
+
+<!--
+  <node pkg="realsense_ros" type="capture" name="apc_sensor"/> 
+-->
+  <include file="$(find pnpush_config)/realsense.launch" />
+
+  <node name="observer_cam_tf" pkg="tf" type="static_transform_publisher" args="7.16834068e-01 -7.68849430e-02 3.78838750e-01 6.89344221e-01 6.44350485e-01 -2.20748124e-01 -2.46753445e-01 /map /observer_rgb_optical_frame 100" />
+  <node name="viewer_cam_tf" pkg="tf" type="static_transform_publisher" args="5.01074772e-01 -5.79801636e-01 5.91704034e-01 9.15468306e-01 3.18655293e-02 -5.58158010e-02 -3.97224074e-01 /map /viewer_rgb_optical_frame 100" />
+  
+  <node name="apriltag0_vicon" pkg="tf" type="static_transform_publisher" args="-0.02 -0.02 -0.0165 0 0 0 /vicon/StainlessSteel/StainlessSteel /apriltag0_vicon 100" />
+  
+  <node name="tf_finger_l1" pkg="tf" type="static_transform_publisher" args="0 0.020 0.0965 0 0 0 1 link_6 link_mount_left 100" />
+  <node name="tf_finger_l2" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0.92388 -0.38268 link_mount_left link_ft_left 100" />
+  <node name="tf_finger_l3" pkg="tf" type="static_transform_publisher" args="0 0 0.113 0 0 0.92388 0.38268 link_ft_left link_probe_left 100" />
+  <node name="tf_finger_r1" pkg="tf" type="static_transform_publisher" args="0 -0.020 0.0965 0 0 0 1 link_6 link_mount_right 100" />
+  <node name="tf_finger_r2" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0.92388 -0.38268 link_mount_right link_ft_right 100" />
+  <node name="tf_finger_r3" pkg="tf" type="static_transform_publisher" args="0 0 0.113 0 0 0.92388 0.38268 link_ft_right link_probe_right 100" />
+</launch>

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<launch>
+  <node name="netft_rdt_driver_right" pkg="netft_rdt_driver" type="netft_node" args=" --address 192.168.125.3 --rate 250 --frame_id link_ft_right" ns="ft_right"/>
+  <node name="netft_rdt_driver_left" pkg="netft_rdt_driver" type="netft_node" args=" --address 192.168.125.4 --rate 250 --frame_id link_ft_left" ns="ft_left"/>
+
+</launch>

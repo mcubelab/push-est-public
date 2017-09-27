@@ -1,0 +1,336 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Marker_overlay1/Namespaces1
+        - /Marker1/Namespaces1
+        - /RobotModel1/Links1
+        - /TF1/Frames1
+      Splitter Ratio: 0.486021519
+    Tree Height: 437
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.588679016
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+      - /Orbit1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: Camera
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: false
+      Line Style:
+        Line Width: 0.0299999993
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: map
+      Value: false
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /visualization_marker_overlay
+      Name: Marker_overlay
+      Namespaces:
+        "": true
+        apriltag: true
+        cross_tip: true
+        estimate: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /visualization_marker
+      Name: Marker
+      Namespaces:
+        "": true
+        /vicon/StainlessSteel/StainlessSteel: true
+        surface: true
+      Queue Size: 100
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link_6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link_ft_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link_ft_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link_mount_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link_mount_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link_probe_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link_probe_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz/TF
+      Enabled: false
+      Frame Timeout: 30
+      Frames:
+        All Enabled: false
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: false
+      Tree:
+        {}
+      Update Interval: 0
+      Value: false
+    - Class: rviz/InteractiveMarkers
+      Enable Transparency: true
+      Enabled: true
+      Name: InteractiveMarkers
+      Show Axes: false
+      Show Descriptions: true
+      Show Visual Aids: false
+      Update Topic: /affordance_marker/update
+      Value: true
+    - Alpha: 1
+      Arrow Width: 0.200000003
+      Class: rviz/WrenchStamped
+      Enabled: false
+      Force Arrow Scale: 0.5
+      Force Color: 204; 51; 51
+      History Length: 1
+      Name: WrenchStamped
+      Topic: /ft_left/netft_data
+      Torque Arrow Scale: 0.100000001
+      Torque Color: 204; 204; 51
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Width: 0.200000003
+      Class: rviz/WrenchStamped
+      Enabled: false
+      Force Arrow Scale: 0.5
+      Force Color: 204; 51; 51
+      History Length: 1
+      Name: WrenchStamped
+      Topic: /ft_right/netft_data
+      Torque Arrow Scale: 0.100000001
+      Torque Color: 204; 204; 51
+      Unreliable: false
+      Value: false
+    - Class: rviz/MarkerArray
+      Enabled: false
+      Marker Topic: /apriltags/marker_array
+      Name: MarkerArray
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/Camera
+      Enabled: true
+      Image Rendering: background and overlay
+      Image Topic: /observer/image_raw
+      Name: Camera
+      Overlay Alpha: 0.300000012
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+      Visibility:
+        Camera: true
+        Grid: true
+        InteractiveMarkers: true
+        Marker: false
+        MarkerArray: false
+        Marker_overlay: true
+        RobotModel: false
+        TF: true
+        Value: true
+        WrenchStamped: false
+      Zoom Factor: 1
+    - Class: rviz/Camera
+      Enabled: true
+      Image Rendering: background and overlay
+      Image Topic: /viewer/image_raw
+      Name: Camera
+      Overlay Alpha: 0.5
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+      Visibility:
+        Camera: true
+        Grid: true
+        InteractiveMarkers: true
+        Marker: false
+        MarkerArray: false
+        Marker_overlay: true
+        RobotModel: true
+        TF: true
+        Value: true
+        WrenchStamped: true
+      Zoom Factor: 1
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Topic: /initialpose
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 2.28795195
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.0599999987
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0.204758838
+        Y: 0.327720761
+        Z: -0.137864232
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.0500000007
+      Name: Current View
+      Near Clip Distance: 0.00999999978
+      Pitch: 0.709796667
+      Target Frame: link1_parent
+      Value: Orbit (rviz)
+      Yaw: 5.22860384
+    Saved:
+      - Class: rviz/Orbit
+        Distance: 1.74232996
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.0599999987
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 0.218198001
+          Y: 0.473358989
+          Z: 0.425852001
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.0500000007
+        Name: Orbit
+        Near Clip Distance: 0.00999999978
+        Pitch: 0.380398005
+        Target Frame: link1_parent
+        Value: Orbit (rviz)
+        Yaw: -1.06959999
+Window Geometry:
+  Camera:
+    collapsed: false
+  Displays:
+    collapsed: false
+  Height: 1056
+  Hide Left Dock: false
+  Hide Right Dock: true
+  QMainWindow State: 000000ff00000000fd00000004000000000000039a000003dafc0200000010fb000000100044006900730070006c0061007900730000000028000000dd000000dd00fffffffb0000000c00430061006d0065007200610100000028000003a80000001600fffffffb0000000c00430061006d00650072006101000003d60000002c0000001600fffffffb0000001e0049006d006100670065005f007200650061006c00730065006e007300650000000241000000ee0000000000000000fc00000343000000a30000000000fffffffa000000000100000002fb0000001e0049006d006100670065005f006b0069006e0065006300740032005f00310100000000ffffffff0000000000000000fb0000001e0049006d006100670065005f006b0069006e0065006300740032005f00320000000000ffffffff0000000000000000fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001c0049006d006100670065005f0061007000720069006c00740061006700000003a8000000d20000000000000000fb0000000a0049006d0061006700650000000335000000cd0000000000000000fb0000000a0049006d0061006700650000000202000001a90000000000000000fb0000000a0049006d0061006700650000000330000000d20000000000000000000000010000010f0000037afc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a0056006900650077007300000000280000037a000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b20000000000000000000000020000073f00000090fc0100000001fb0000000a00560069006500770073030000004e00000080000002e1000001970000000300000737000000cdfc0100000002fb0000000800540069006d006500000000000000073f0000030000fffffffb0000000800540069006d006501000000000000045000000000000000000000039f000003da00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 1855
+  X: 65
+  Y: 24

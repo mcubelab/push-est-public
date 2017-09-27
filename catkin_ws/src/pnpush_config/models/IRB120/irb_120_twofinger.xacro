@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!-- Peter KT Yu, Apr 1 -->
+<robot name="irb_120_twofinger" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- The 120 robot-->
+  <xacro:include filename="$(find pnpush_config)/models/IRB120/abb_robot_model/IRB120_3_58__01/xacro/IRB120_3_58__01.xacro"/>
+  
+  <!-- The two fingers-->
+  <xacro:macro name="TOOL" params="suffix reflect">
+      <link name="link_ft_${suffix}"/>
+      <xacro:property name="mount_length" value="0.12" />
+      <xacro:property name="probe_length" value="0.113" />
+      
+      <xacro:LINK_CYLINDER name="link_mount_${suffix}" radius="0.0085" length="${mount_length}"/>
+      <xacro:LINK_CYLINDER name="link_probe_${suffix}" radius="0.00316" length="${probe_length}"/>
+      
+      <xacro:JOINT name="wsg_32_gripper_base_joint_gripper_${suffix}" type="prismatic" xyz="0 ${reflect*0.0103} 0.12" 
+       rpy="0 0 0" axis="0 ${reflect} 0" effort="1" velocity="100" lower="0" upper="0.035" parent="link_6" child="link_mount_${suffix}"/>
+      
+      <xacro:FIXED_JOINT name="joint_ft_sense_${suffix}" xyz="0 0 0" rpy="0 0 ${-pi/4*3}" parent="link_mount_${suffix}" child="link_ft_${suffix}"/>
+      <xacro:FIXED_JOINT name="joint_probe_${suffix}" xyz="0 0 ${probe_length}" rpy="0 0 ${pi/4*3}" parent="link_ft_${suffix}" child="link_probe_${suffix}"/>
+  </xacro:macro>
+  
+  <xacro:TOOL suffix="left" reflect="1"/>
+  <xacro:TOOL suffix="right" reflect="-1"/>
+
+</robot>
+

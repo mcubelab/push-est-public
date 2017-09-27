@@ -1,0 +1,9 @@
+<launch>
+    <arg name="use_virtual" default="false" />
+    
+    <rosparam unless="$(arg use_virtual)" command="load" file="$(find pnpush_config)/mcubeRobotParams.yaml"/>
+    
+    <node pkg="robot_node" type="robot_node" name="robot_node2" output="screen" args="2" >
+        <remap from="robot2_RRIJointState" to="joint_states" />
+    </node>
+</launch>

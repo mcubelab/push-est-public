@@ -1,0 +1,6 @@
+<launch>
+    <rosparam command="load" ns="cameras" file="$(find realsense_ros)/yaml/cameras.yaml" />
+    <node name="realsense_ros" pkg="realsense_ros" type="capture" output="screen" >
+        <!--<param name="cameras" textfile="$(find realsense_ros)/yaml/cameras.yaml" />-->
+    </node>
+</launch>

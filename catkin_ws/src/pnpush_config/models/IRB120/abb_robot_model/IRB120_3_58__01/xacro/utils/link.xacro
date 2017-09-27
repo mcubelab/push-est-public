@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="LINK" params="robot_name link_name mesh_name mass color">
+    <link name="${link_name}">
+      <inertial>
+        <mass value="${mass}"/>
+        <inertia ixx="1" ixy="1" ixz="1" iyy="1" iyz="1" izz="1"/>
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://pnpush_config/models/IRB120/abb_robot_model/${robot_name}/mesh/${robot_name}/${mesh_name}"/>
+        </geometry>
+        <material name="${color}">
+          <color rgba="0.3 0.3 0.3 1.0"/>
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://pnpush_config/models/IRB120/abb_robot_model/${robot_name}/mesh/${robot_name}/${mesh_name}"/>
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+  <xacro:macro name="LINK_OFFSET" params="robot_name link_name mesh_name mass color xyz rpy">
+    <link name="${link_name}">
+      <inertial>
+        <mass value="${mass}"/>
+        <inertia ixx="1" ixy="1" ixz="1" iyy="1" iyz="1" izz="1"/>
+      </inertial>
+      <visual>
+        <origin xyz="${xyz}" rpy="${rpy}"/>
+        <geometry>
+          <mesh filename="package://pnpush_config/models/IRB120/abb_robot_model/${robot_name}/mesh/${robot_name}/${mesh_name}"/>
+        </geometry>
+        <material name="${color}">
+          <color rgba="0.3 0.3 0.3 1.0"/>
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="${xyz}" rpy="${rpy}"/>
+        <geometry>
+          <mesh filename="package://pnpush_config/models/IRB120/abb_robot_model/${robot_name}/mesh/${robot_name}/${mesh_name}"/>
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+  
+  <xacro:macro name="LINK_CYLINDER" params="name radius length">
+    <link name="${name}">
+    <visual>
+      <geometry>
+        <cylinder radius="${radius}" length="${length}"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 ${-length/2}"/>
+      <material name="abb_gray">
+        <color rgba="0.7 0.7 0.7 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="${radius}" length="${length}"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 ${-length/2}"/>
+    </collision>
+    </link>
+  </xacro:macro>
+</robot>

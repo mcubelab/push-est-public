@@ -1,0 +1,347 @@
+cmd "0-roscore" {
+    exec = "roscore";
+    host = "localhost";
+}
+cmd "1-perception-playback" {
+    exec = "roslaunch pnpush_config load_robot_desc.launch";
+    host = "localhost";
+}
+cmd "1-perception-real" {
+    exec = "roslaunch pnpush_config robot_perception.launch";
+    host = "localhost";
+}
+cmd "1-perception-real-twofinger" {
+    exec = "roslaunch pnpush_config robot_perception_twofinger.launch";
+    host = "localhost";
+}
+cmd "1-perception-virtual" {
+    exec = "roslaunch pnpush_config robot_perception.launch have_robot:=false";
+    host = "localhost";
+}
+cmd "2-abb" {
+    exec = "roslaunch pnpush_config abb.launch";
+    host = "localhost";
+}
+cmd "3-ft" {
+    exec = "rosrun netft_rdt_driver netft_node --address 192.168.1.3 --rate 250";
+    host = "localhost";
+}
+cmd "3.1-ft-twofinger" {
+    exec = "roslaunch pnpush_config ft_twofingers.launch";
+    host = "localhost";
+}
+cmd "3.2-gripper" {
+    exec = "roslaunch pnpush_config gripper.launch";
+    host = "localhost";
+}
+cmd "3.3-move_the_gripper" {
+    exec = "rosservice call /wsg_32_driver/move 20 100";
+    host = "localhost";
+}
+cmd "4-vicon" {
+    exec = "roslaunch pnpush_config vicon.launch";
+    host = "localhost";
+}
+cmd "4.1-apriltag" {
+    exec = "roslaunch apriltags apriltags.launch";
+    host = "localhost";
+}
+cmd "5-rviz" {
+    exec = "rosrun rviz rviz -d $CODE_BASE/catkin_ws/src/pnpush_config/rviz/rvizconfig.rviz";
+    host = "localhost";
+}
+cmd "6-gohome" {
+    exec = "rosservice call robot2_SetJoints \"{j1: 0, j2: 0, j3: 0, j4: 0, j5: 90, j6: 0}\"";
+    host = "localhost";
+}
+cmd "6-goodplace-to-start" {
+    exec = "rosservice call robot2_SetJoints \"{j1: -17.35, j2: -35.15, j3: 69.13, j4: -29.21, j5: -37.68, j6: 0}\"";
+    host = "localhost";
+}
+cmd "6-goprepare" {
+    exec = "rosservice call robot2_SetJoints \"{j1: -60, j2: -35.15, j3: 69.13, j4: -29.21, j5: -37.68, j6: 0}\"";
+    host = "localhost";
+}
+cmd "7-contour-following" {
+    exec = "rosrun pnpush_planning contour_follow.py";
+    host = "localhost";
+}
+cmd "8-show-ft-value" {
+    exec = "rosrun pnpush_planning get_averaged_ft.py";
+    host = "localhost";
+}
+cmd "9-egm" {
+    exec = "rosrun pnpush_planning  collect_egm_interactive_push.py";
+    host = "localhost";
+}
+cmd "9-isam" {
+    exec = "/home/mcube/push/catkin_ws/src/isam_pose/cmake-build-debug/devel/lib/isam_pose/isam_pose --shape-id rect1  --doEKF";
+    host = "localhost";
+}
+cmd "9-isam-butter" {
+    exec = "/home/mcube/push/catkin_ws/src/isam_pose/cmake-build-debug/devel/lib/isam_pose/isam_pose --shape-id butter";
+    host = "localhost";
+}
+cmd "9-isam-ellip2" {
+    exec = "/home/mcube/push/catkin_ws/src/isam_pose/cmake-build-debug/devel/lib/isam_pose/isam_pose --shape-id ellip2";
+    host = "localhost";
+}
+cmd "9-isam-json" {
+    exec = "/home/mcube/push/catkin_ws/src/isam_pose/cmake-build-debug/devel/lib/isam_pose/isam_pose --json /home/mcube/pushdata/result/shapeRecon-20170423_231539_272-isam-multipush_shape=rect1_surface=plywood_rep=0000.json";
+    host = "localhost";
+}
+cmd "9-isam-ros" {
+    exec = "rosrun isam_pose isam_pose --shape-id rect1";
+    host = "localhost";
+}
+cmd "9i-collect-multipush-isam-twofinger" {
+    exec = "rosrun pnpush_planning collect_multiple_pushes_isam_twofinger.py -s rect1 --surface plywood --nrep 10";
+    host = "localhost";
+}
+group "calibration" {
+    cmd "1-webcam-robot" {
+        exec = "rosrun pnpush_planning check_webcam_vs_robot.py";
+        host = "localhost";
+    }
+    cmd "2-extract_corners_from_img" {
+        exec = "rosrun pnpush_planning extract_corners_from_img.py";
+        host = "localhost";
+    }
+    cmd "3-calib3d2d.py" {
+        exec = "rosrun pnpush_planning calib3d2d.py";
+        host = "localhost";
+    }
+    cmd "vicon-robot" {
+        exec = "rosrun pnpush_planning check_vicon_vs_robot.py";
+        host = "localhost";
+    }
+}
+
+group "collect-data" {
+    cmd "9a-collect-push-dataset" {
+        auto_respawn = "true";
+        exec = "rosrun pnpush_planning collect_push_dataset_with_acceleration.py --real  -s rect1 --surface plywood --slow";
+        host = "localhost";
+    }
+    cmd "9a-collect-push-dataset-rep" {
+        auto_respawn = "true";
+        exec = "rosrun pnpush_planning collect_push_dataset_with_acceleration.py --real  -s rect1  --surface plywood --nrep 2000";
+        host = "localhost";
+    }
+    cmd "9b-collect-friction-mapping" {
+        exec = "rosrun pnpush_planning collect_friction_mapping.py --surface abs --cage";
+        host = "localhost";
+    }
+    cmd "9c-collect-friction-mapping-fine" {
+        exec = "rosrun pnpush_planning collect_friction_mapping_fine.py --surface delrin";
+        host = "localhost";
+    }
+    cmd "9d-collect-friction-mapping-vels" {
+        exec = "rosrun pnpush_planning collect_friction_mapping_vels.py --surface plywood";
+        host = "localhost";
+    }
+    cmd "9e-collect-limitsurface-crosssec" {
+        auto_respawn = "true";
+        exec = "rosrun pnpush_planning collect_friction_mapping_limitsurface_crosssec.py --surface pu";
+        host = "localhost";
+    }
+    cmd "9f-collect-limitsurface" {
+        auto_respawn = "true";
+        exec = "rosrun pnpush_planning collect_friction_mapping_limitsurface.py --surface plywood";
+        host = "localhost";
+    }
+    cmd "9g-collect-grid-validation" {
+        auto_respawn = "true";
+        exec = "rosrun pnpush_planning collect_grid_for_validation.py --real -s rect1 --surface plywood";
+        host = "localhost";
+    }
+    cmd "9h-collect-multipush-isam" {
+        exec = "rosrun pnpush_planning collect_multiple_pushes_isam.py -s rect1 --surface plywood --nrep 3";
+        host = "localhost";
+    }
+}
+
+group "playback" {
+    cmd "1-playback" {
+        exec = "rosbag play $DATA_BASE/inputdata/multi_pushes_twofinger_gripper/multipush_shape=rect1_surface=plywood_rep=0001_step=0.0040_april.bag /visualization_marker:=/dump /visualization_marker_overlay:=/dump2";
+        host = "localhost";
+    }
+    cmd "1-playback-butter" {
+        exec = "rosbag play $DATA_BASE/inputdata/multi_pushes_twofinger_gripper/multipush_shape=butter_surface=plywood_rep=0000_step=0.0040_april.bag /visualization_marker:=/dump /visualization_marker_overlay:=/dump2";
+        host = "localhost";
+    }
+    cmd "1-playback-ellip2" {
+        exec = "rosbag play $DATA_BASE/inputdata/multi_pushes_twofinger_gripper/multipush_shape=ellip2_surface=plywood_rep=0000_step=0.0040_april.bag /visualization_marker:=/dump /visualization_marker_overlay:=/dump2";
+        host = "localhost";
+    }
+}
+
+group "visualization" {
+    cmd "0-show-robot-arena" {
+        exec = "rosrun pnpush_planning robot_arena_visualizer.py ";
+        host = "localhost";
+    }
+    cmd "1-show-block" {
+        exec = "rosrun pnpush_planning vicon_object_visualizer.py -s rect1";
+        host = "localhost";
+    }
+    cmd "1-show-block-butter" {
+        exec = "rosrun pnpush_planning vicon_object_visualizer.py -s butter";
+        host = "localhost";
+    }
+    cmd "1-show-block-ellip2" {
+        exec = "rosrun pnpush_planning vicon_object_visualizer.py -s ellip2";
+        host = "localhost";
+    }
+    cmd "2-show-surface" {
+        exec = "rosrun pnpush_planning surface_visualizer.py -s plywood";
+        host = "localhost";
+    }
+    cmd "3-show-cone" {
+        exec = "rosrun pnpush_planning apriltag_cone.py";
+        host = "localhost";
+    }
+}
+
+script "run_playback" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "5-rviz";
+    start cmd "1-playback";
+    start cmd "1-perception-playback";
+    start cmd "1-show-block";
+}
+
+script "run_playback-butter" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "5-rviz";
+    start cmd "1-playback-butter";
+    start cmd "1-perception-playback";
+    start cmd "1-show-block";
+}
+
+script "run_playback-ellip2" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "5-rviz";
+    start cmd "1-playback-ellip2";
+    start cmd "1-perception-playback";
+    start cmd "1-show-block-ellip2";
+}
+
+script "run_playback_and_test_butter" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "5-rviz";
+    start cmd "1-playback-butter";
+    start cmd "1-perception-playback";
+    start cmd "1-show-block-butter";
+    start cmd "2-show-surface";
+    start cmd "3-show-cone";
+    wait ms 4000;
+    start cmd "9-isam-butter";
+}
+
+script "run_playback_and_test_ellip2" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "5-rviz";
+    start cmd "1-playback-ellip2";
+    start cmd "1-perception-playback";
+    start cmd "1-show-block-ellip2";
+    start cmd "2-show-surface";
+    start cmd "3-show-cone";
+    wait ms 4000;
+    start cmd "9-isam-ellip2";
+}
+
+script "run_playback_and_test_movie" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "5-rviz";
+    start cmd "1-playback";
+    start cmd "1-perception-playback";
+    start cmd "1-show-block";
+    start cmd "2-show-surface";
+    wait ms 12000;
+    start cmd "9-isam";
+    wait ms 126000;
+    stop cmd "9-isam";
+}
+
+script "run_playback_and_test_rect1" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "5-rviz";
+    start cmd "1-playback";
+    start cmd "1-perception-playback";
+    start cmd "1-show-block";
+    start cmd "2-show-surface";
+    start cmd "3-show-cone";
+    wait ms 4000;
+    start cmd "9-isam";
+}
+
+script "run_real" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "1-perception-real";
+    start cmd "2-abb";
+    start cmd "3-ft";
+    start cmd "4-vicon";
+    start cmd "5-rviz";
+    start group "visualization";
+}
+
+script "run_real_twofinger" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "1-perception-real-twofinger";
+    start cmd "2-abb";
+    start cmd "3.1-ft-twofinger";
+    start cmd "4-vicon";
+    start cmd "4.1-apriltag";
+    start cmd "5-rviz";
+    start group "visualization";
+}
+
+script "run_real_twofinger_demo" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "1-perception-real-twofinger";
+    start cmd "2-abb";
+    start cmd "3.1-ft-twofinger";
+    start cmd "4-vicon";
+    start cmd "4.1-apriltag";
+    start cmd "5-rviz";
+    start cmd "9-egm";
+    wait ms 1000;
+    start cmd "9-isam-ros";
+    start group "visualization";
+}
+
+script "run_real_twofinger_demo_straight_pushes" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "1-perception-real-twofinger";
+    start cmd "2-abb";
+    start cmd "3.1-ft-twofinger";
+    start cmd "4-vicon";
+    start cmd "4.1-apriltag";
+    start cmd "5-rviz";
+    wait ms 1000;
+    start cmd "9-isam-ros";
+    start cmd "9i-collect-multipush-isam-twofinger";
+    start group "visualization";
+}
+
+script "run_virtual" {
+    start cmd "0-roscore";
+    wait ms 1000;
+    start cmd "1-perception-virtual";
+    start cmd "3-ft";
+    start cmd "4-vicon";
+    start cmd "5-rviz";
+    start group "visualization";
+}

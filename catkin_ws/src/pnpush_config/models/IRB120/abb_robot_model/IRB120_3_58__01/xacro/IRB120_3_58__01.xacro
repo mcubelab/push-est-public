@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot name="IRB120_3_58__01" xmlns:xacro="http://ros.org/wiki/xacro">
+<xacro:include filename="$(find pnpush_config)/models/IRB120/abb_robot_model/IRB120_3_58__01/xacro/utils/colors.xacro"/>
+<xacro:include filename="$(find pnpush_config)/models/IRB120/abb_robot_model/IRB120_3_58__01/xacro/utils/link.xacro"/>
+<xacro:include filename="$(find pnpush_config)/models/IRB120/abb_robot_model/IRB120_3_58__01/xacro/utils/joint.xacro"/>
+<xacro:LINK robot_name="IRB120_3_58__01" link_name="base_link" mesh_name="Base.dae" mass="50" color="default"/>
+<xacro:LINK robot_name="IRB120_3_58__01" link_name="link_1" mesh_name="Link1.dae" mass="50" color="default"/>
+<xacro:LINK robot_name="IRB120_3_58__01" link_name="link_2" mesh_name="Link2.dae" mass="50" color="default"/>
+<xacro:LINK robot_name="IRB120_3_58__01" link_name="link_3" mesh_name="Link3.dae" mass="50" color="default"/>
+<xacro:LINK robot_name="IRB120_3_58__01" link_name="link_4" mesh_name="Link4.dae" mass="50" color="default"/>
+<xacro:LINK robot_name="IRB120_3_58__01" link_name="link_5" mesh_name="Link5.dae" mass="50" color="default"/>
+<xacro:LINK_OFFSET robot_name="IRB120_3_58__01" link_name="link_6" mesh_name="Link6.dae" mass="50" color="default" xyz="0 0 -0.072" rpy="0 -1.5707963267949 0"/>
+<xacro:JOINT name="joint1" type="revolute" xyz="0.000 0.000 0.290" rpy="0 0 0" axis="0.000 0.000 1.000" effort="7" velocity="10" lower="-2.87979326579064" upper="2.87979326579064" parent="base_link" child="link_1"/>
+<xacro:JOINT name="joint2" type="revolute" xyz="0.000 0.000 0.000" rpy="0 0 0" axis="0.000 1.000 0.000" effort="7" velocity="10" lower="-1.91986217719376" upper="1.91986217719376" parent="link_1" child="link_2"/>
+<xacro:JOINT name="joint3" type="revolute" xyz="0.000 0.000 0.270" rpy="0 0 0" axis="0.000 1.000 0.000" effort="7" velocity="10" lower="-1.5707963267949" upper="1.22173047639603" parent="link_2" child="link_3"/>
+<xacro:JOINT name="joint4" type="revolute" xyz="0.302 0.000 0.070" rpy="0 0 0" axis="1.000 0.000 0.000" effort="7" velocity="10" lower="-2.79252680319093" upper="2.79252680319093" parent="link_3" child="link_4"/>
+<xacro:JOINT name="joint5" type="revolute" xyz="0.000 0.000 0.000" rpy="0 0 0" axis="0.000 1.000 0.000" effort="7" velocity="10" lower="-2.0943951023932" upper="2.0943951023932" parent="link_4" child="link_5"/>
+<xacro:JOINT name="joint6" type="revolute" xyz="0.072 0.000 0.000" rpy="0 1.57079621992 0" axis="0.000 0.000 1.000" effort="7" velocity="10" lower="-6.98131700797732" upper="6.98131700797732" parent="link_5" child="link_6"/>
+</robot>

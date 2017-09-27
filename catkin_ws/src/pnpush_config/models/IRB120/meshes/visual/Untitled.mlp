@@ -1,0 +1,62 @@
+<!DOCTYPE MeshLabDocument>
+<MeshLabProject>
+ <MeshGroup>
+  <MLMesh label="base_link.stl" filename="base_link.stl">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="link_1.stl" filename="link_1.stl">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="link_2.stl" filename="link_2.stl">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="link_3.stl" filename="link_3.stl">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="link_4.stl" filename="link_4.stl">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="link_5.stl" filename="link_5.stl">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh label="link_6.stl" filename="link_6.stl">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+ </MeshGroup>
+ <RasterGroup/>
+</MeshLabProject>

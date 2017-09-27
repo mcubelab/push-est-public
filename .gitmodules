@@ -1,0 +1,22 @@
+
+[submodule "catkin_ws/src/apriltags"]
+	path = catkin_ws/src/apriltags
+	url = git@github.com:mcubelab/apriltags.git
+[submodule "catkin_ws/src/usb_cam"]
+	path = catkin_ws/src/usb_cam
+	url = git@github.com:mcubelab/usb_cam.git
+[submodule "catkin_ws/src/vicon_bridge"]
+	path = catkin_ws/src/vicon_bridge
+	url = git@github.com:mcubelab/vicon_bridge
+[submodule "catkin_ws/src/wsg32-ros-pkg"]
+	path = catkin_ws/src/wsg32-ros-pkg
+	url = git@github.com:mcubelab/wsg32-ros-pkg.git
+[submodule "catkin_ws/src/abb-ros-catkin"]
+	path = catkin_ws/src/abb-ros-catkin
+	url = git@github.com:mcubelab/abb-ros-catkin.git
+[submodule "catkin_ws/src/netft_rdt_driver"]
+	path = catkin_ws/src/netft_rdt_driver
+	url = git@github.com:mcubelab/netft_rdt_driver.git
+[submodule "catkin_ws/src/realsense-ros"]
+	path = catkin_ws/src/realsense-ros
+	url = git@github.com:mcubelab/realsense-ros.git

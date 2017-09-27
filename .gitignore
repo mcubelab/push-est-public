@@ -1,0 +1,59 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+ 
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+ 
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+ 
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+*~
+*.mexa64
+*.15
+*.tmp
+
+drake-distro
+.viewer-prefs
+drake_viewer.out
+print.out
+
+
+build/
+pod-build/
+hands_MLab
+*.pyc
+*/*/*/*.pyc
+shapeRecon/codegen
+shapeRecon/utility/codegen
+catkin_ws/build
+catkin_ws/devel
+catkin_ws/src/isam_pose/cmake-build-debug
