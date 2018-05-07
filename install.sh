@@ -1,6 +1,7 @@
 #!/bin/bash
 # Peter KT Yu, 2015
 
+# See also push-est-public/catkin_ws/src/isam_pose/install.sh
 
 function ask {
     echo $1        # add this line

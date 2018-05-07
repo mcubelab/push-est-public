@@ -3,14 +3,6 @@ sudo apt-get install cmake libsuitesparse-dev libeigen3-dev libsdl1.2-dev doxyge
 cd ${CODE_BASE}/software/externals/isam_v1_7
 make
 
-# for adol-c
-#~ cd ../ADOL-C-2.6.0
-#~ ./configure --prefix=${CODE_BASE}/build
-#~ make clean
-#~ make
-#~ make install 
-
-
 #
 cd ${CODE_BASE}/software/externals/cppad-20161231
 ./configure --prefix=${CODE_BASE}/software/build
@@ -22,11 +14,6 @@ sudo apt-get install python-pip python-dev build-essential
 sudo pip install --upgrade pip 
 sudo pip install --upgrade virtualenv 
 sudo pip install pandas 
-
-# for egm
-sudo apt --yes install protobuf-compiler
-sudo pip install protobuf
-sudo apt-get install python-xlib
 
 # for jsoncpp
 cd ${CODE_BASE}/software/externals/jsoncpp-src-0.5.0
