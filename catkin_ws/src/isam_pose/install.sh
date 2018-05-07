@@ -3,7 +3,7 @@ sudo apt-get install cmake libsuitesparse-dev libeigen3-dev libsdl1.2-dev doxyge
 cd ${CODE_BASE}/software/externals/isam_v1_7
 make
 
-#
+# for cppad
 cd ${CODE_BASE}/software/externals/cppad-20161231
 ./configure --prefix=${CODE_BASE}/software/build
 make

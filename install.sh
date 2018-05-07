@@ -107,3 +107,15 @@ if [ "$#" == 0 ] || [ "$1" == "LIBBOT" ]; then
     sudo cp -r build/* /usr/local/
 fi
 
+if [ "$#" == 0 ] || [ "$1" == "APRILTAGCPP" ]; then
+    mkdir -p $HOME/software
+    cd $HOME/software
+    git clone https://github.com/mit212/apriltags-cpp.git
+    cd apriltags-cpp
+    mkdir build
+    cd build
+    cmake .. -DCMAKE_BUILD_TYPE=Release
+    make
+    sudo make install
+fi
+
