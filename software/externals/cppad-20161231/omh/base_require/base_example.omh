@@ -1,0 +1,25 @@
+// $Id: base_example.omh 3845 2016-11-19 01:50:47Z bradbell $
+/* --------------------------------------------------------------------------
+CppAD: C++ Algorithmic Differentiation: Copyright (C) 2003-16 Bradley M. Bell
+
+CppAD is distributed under multiple licenses. This distribution is under
+the terms of the
+                    GNU General Public License Version 3.
+
+A copy of this license is included in the COPYING file of this distribution.
+Please visit http://www.coin-or.org/CppAD/ for information on other licenses.
+-------------------------------------------------------------------------- */
+$begin base_example$$
+
+$section Example AD Base Types That are not AD<OtherBase>$$
+
+$contents%
+	example/base_alloc.hpp%
+	example/base_require.cpp%
+	cppad/example/base_adolc.hpp%
+	cppad/core/base_float.hpp%
+	cppad/core/base_double.hpp%
+	cppad/core/base_complex.hpp
+%$$
+
+$end

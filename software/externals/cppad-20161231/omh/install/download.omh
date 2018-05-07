@@ -1,0 +1,275 @@
+$Id: download.omh 3858 2016-12-26 16:17:59Z bradbell $
+/* --------------------------------------------------------------------------
+CppAD: C++ Algorithmic Differentiation: Copyright (C) 2003-16 Bradley M. Bell
+
+CppAD is distributed under multiple licenses. This distribution is under
+the terms of the
+                    GNU General Public License Version 3.
+
+A copy of this license is included in the COPYING file of this distribution.
+Please visit http://www.coin-or.org/CppAD/ for information on other licenses.
+-------------------------------------------------------------------------- */
+
+$begin download$$
+$escape $$
+$spell
+	vcdir
+	vcvarsall
+	Microsoft
+	yyyy
+	mkdir
+	cmake
+	nmake
+	Makefiles
+	omhelp
+	svn
+	https
+	org
+	dir
+	exe
+	gpl
+	xzf
+	CppAD
+	cppad
+	gzip
+	yyyymmdd
+	rel
+	lic
+	epl
+	tgz
+	hpp
+	github
+	git git
+	htm
+$$
+$dollar @$$
+
+$section Download The CppAD Source Code$$
+
+$head Purpose$$
+CppAD is an include file library and you therefore need the source
+code to use it.
+This section discusses how to download the different versions of CppAD.
+
+$head Distribution Directory$$
+We refer to the CppAD source directory created by the download instruction
+below as the distribution directory.
+To be specific, the distribution directory contains the file
+$code cppad/cppad.hpp$$.
+
+$head Compressed Archives$$
+These files have been archived using $code tar$$ and compressed using
+$code gzip$$.
+We use $icode version$$ to denote the year, month, and day,
+corresponding to a version of the CppAD API.
+For example $code 20160101$$ corresponds to January 1, 2016.
+We use $icode rel$$ to denote the release number.
+Higher release numbers corresponding to more bug fixes.
+We use $icode lic$$ to denote the licence corresponding to a compressed
+archive which can be either $code epl$$ or $code gpl$$
+($code gpl$$ denotes the GNU General Public License and
+$code epl$$ denotes the Eclipse Public License).
+The compressed archives names have one of the following formats:
+$codei%
+	cppad-%version%.%rel%.%lic%.tgz
+	cppad-%version%.%rel%.tgz
+	cppad-%version%.%lic%.tgz
+%$$
+In Unix, you can extract these compressed archives using $code tar$$.
+For example,
+$codei%
+	tar -xzf cppad-%version%.%rel%.%lic%.tgz
+%$$
+No matter what the format of the name, the corresponding distribution
+directory is $codei%cppad-%version%$$.
+To see that the extraction has been done correctly,
+check for the following file:
+$codei%
+	cppad-%version%/cppad/cppad.hpp
+%$$
+
+
+$head Current Version$$
+
+$subhead Compressed Archives$$
+$table
+$bold version$$ $pre  $$ $cnext $bold license$$ $pre  $$ $cnext $bold link$$
+$rnext
+current  $cnext EPL $cnext $href%
+http://www.coin-or.org/download/source/CppAD/cppad-20161231.epl.tgz%
+cppad-20161231.epl.tgz%$$
+$rnext
+current  $cnext GPL $cnext $href%
+http://www.coin-or.org/download/source/CppAD/cppad-20161231.gpl.tgz%
+cppad-20161231.gpl.tgz%$$
+$tend
+
+$subhead Subversion$$
+The archives above correspond to the current subversion
+$href%https://projects.coin-or.org/CppAD/browser/trunk%trunk%$$.
+You can obtain a subversion copy of the current version using the command
+$codei%
+	svn checkout https://projects.coin-or.org/svn/CppAD/trunk cppad.svn/trunk
+%$$
+This procedure requires that
+the $href%http://subversion.tigris.org/%subversion%$$ program
+is installed on your system.
+
+$subhead Git$$
+The archives above correspond to the current git
+$href%https://github.com/bradbell/cppad%master%$$.
+You can a git clone of the current version using the command
+$codei%
+    git clone https://github.com/coin-or/CppAD.git cppad.git
+%$$
+This procedure requires that
+the $href|https://en.wikipedia.org/wiki/Git_%28software%29|git|$$
+is installed on your system.
+
+
+$head Release Versions$$
+
+$subhead Coin$$
+Release versions have the $icode rel$$ field in the compressed archive name.
+The release version on the
+$href%http://www.coin-or.org/download/source/CppAD/%Coin download page%$$
+have the format
+$codei%
+	cppad-%version%.%rel%.%lic%.tgz
+%$$
+
+$subhead github$$
+The release versions on the
+$href%https://github.com/coin-or/CppAD/releases%github download page%$$
+have the format
+$codei%
+	cppad-%version%.%rel%.tgz
+%$$
+
+$head Monthly Versions$$
+Monthly versions of the compressed tar files are available on the
+$href%http://www.coin-or.org/download/source/CppAD/%Coin download page%$$.
+These are kept until the end of the current year,
+when the next release is created.
+The monthly versions have the form
+$codei%
+	cppad-%yyyy%0101.%lic%.tgz
+%$$
+where the license code $icode lic$$
+is $code gpl$$ or $code epl$$
+and $icode yyyy$$ is the current year.
+
+$head Daily Versions$$
+You can use the git version of the repository to obtain the version
+corresponding to a specific day as follows:
+$codei%
+	git clone https://github.com/coin-or/CppAD.git cppad.git
+	cd cppad.git
+	git checkout --quiet %hash_id%
+%$$
+where $icode hash_id$$ is the SHA-1 hash code for the version
+of the repository for the day of interest.
+Note that a list of these $icode hash_id$$ values can be found at the
+CppAD github
+$href%https://github.com/coin-or/CppAD/commits/master%commits/master%$$.
+page.
+
+$head Windows File Extraction and Testing$$
+If you know how to extract the distribution directory from
+the tar file, just do so. Otherwise, below is one way you can do it.
+(Note that if $code 7z.exe$$, $code cmake.exe$$, and $code nmake.exe$$ are you
+your execution path, you will not need to specify their paths below.)
+
+$list number$$
+Download and install the open source program
+$href%http://www.7-zip.org%$$.
+$lnext
+Download and install the Visual Studio Express; for example
+$href%http://www.microsoft.com/en-us/download/confirmation.aspx?id=44914
+	%Visual Studio 2013
+%$$
+$lnext
+In a command window, execute the following commands:
+$codei|
+	set PATH=|path_to_7_zip|;%PATH%
+	set PATH=|path_to_cmake|;%PATH%
+	set VCDIR=|path_to_vcdir|;%PATH%
+	call "%VCDIR%\vcvarsall.bat" x86
+|$$
+For example, on one machine these paths had the following values:
+$codei|
+	|path_to_7_zip|=C:\Program Files\7-zip
+	|path_to_cmake|=C:\Program Files (x86)\CMake\bin
+	|path_to_vcdir|=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC
+|$$
+$lnext
+Use the following commands to extract the distribution from the
+compressed archive:
+$codei%
+	7z x cppad-%version%.%lic%.tgz
+	7z x cppad-%version%.%lic%.tar
+%$$
+$lnext
+To see if this has been done correctly, check for the following file:
+$codei%
+	cppad-%version%\cppad\cppad.hpp
+%$$
+$lnext
+The commands below are optional.
+They run the CppAD tests using the default $cref cmake$$ settings
+(except for the $cref/generator/cmake/generator/$$ option)
+$codei%
+	mkdir build
+	cd build
+	cmake -G "NMake Makefiles" ..
+	nmake check
+%$$
+$lend
+
+
+$head Install Instructions$$
+The $cref install$$ instructions on this web site correspond to the
+$cref/current version/download/Current Version/$$ of CppAD.
+If you are using an old version of CppAD
+these instructions may work.
+If you have trouble (or just to be careful),
+you should follow the instructions in
+the $code doc$$ subdirectory of the distribution directory.
+If there is no such documentation, you can build it; see
+$cref/building documentation
+	/download
+	/No Documentation
+	/Building Documentation
+/$$.
+
+$head No Documentation$$
+Some of the download methods do not include documentation.
+To be specific, the
+$cref/subversion/download/Current Version/Subversion/$$ method,
+$cref/git/download/Current Version/Git/$$ method,
+$cref/daily version/download/Daily Versions/$$ method, and the
+$cref/github release version/download/Release Versions/github/$$ method.
+In addition, these methods only provide the
+$href%http://opensource.org/licenses/EPL-1.0%EPL licensed%$$
+version of CppAD.
+
+$subhead Building Documentation$$
+If you are using one of these download methods,
+you can build the documentation to get the corresponding install instructions.
+The documentation for CppAD is built from the source code files using
+$href%http://www.seanet.com/~bradbell/omhelp/%OMhelp%$$.
+You will need to install the $code omhelp$$ command so that
+$codep
+	which omhelp
+$$
+shows it is in your path.
+Once you have done this,
+in the distribution directory execute the following command:
+$codei%
+	bin/run_omhelp.sh htm
+%$$
+You will then be able to follow the install instructions in
+the $code doc$$ subdirectory of the distribution directory.
+
+
+$end

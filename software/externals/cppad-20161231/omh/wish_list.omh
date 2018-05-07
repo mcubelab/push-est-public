@@ -1,0 +1,194 @@
+$Id: wish_list.omh 3856 2016-12-21 05:51:22Z bradbell $
+/* --------------------------------------------------------------------------
+CppAD: C++ Algorithmic Differentiation: Copyright (C) 2003-16 Bradley M. Bell
+
+CppAD is distributed under multiple licenses. This distribution is under
+the terms of the
+                    GNU General Public License Version 3.
+
+A copy of this license is included in the COPYING file of this distribution.
+Please visit http://www.coin-or.org/CppAD/ for information on other licenses.
+-------------------------------------------------------------------------- */
+$begin wish_list$$
+$spell
+	op
+	Recomputation
+	optimizer
+	checkpointing
+	grep
+	recomputed
+	iterator
+	std
+	Adolc
+	xml
+	hpp
+	CppAD
+	Atan
+	cppad
+	tapeless
+	Retape
+$$
+
+$section The CppAD Wish List$$
+
+$comment ----------------------------------------------------------------- $$
+$head Optimization$$
+
+$subhead Taping$$
+Perhaps some of the optimization done while taping forward mode
+should be delayed to the $code optimization$$ step.
+
+$subhead Special Operators$$
+Add special operators that can be implemented more efficiently, e.g.,
+$codei%
+	square(%x%) = %x% * %x%
+%$$
+and have the optimizer recognize when they should be used.
+(They could also be in the user API, but it would not be expected
+that the user would use them.)
+
+$comment ------------------------------------------------------------------ $$
+$head checkpoint$$
+
+$subhead Retape$$
+Perhaps there should be a version of the
+$cref checkpoint$$ class that uses a tapeless AD package to compute
+the derivative values.
+This would allow for algorithms where the operations sequence
+depends on the independent variable values.
+There is a question as to how sparsity patterns would be determined
+in this case.
+Perhaps they would be passed into the constructor.
+If it was known to be constant,
+the user could compute the pattern using CppAD.
+Otherwise, the user could input
+a conservative estimate of the pattern that would be correct.
+
+$subhead Testing$$
+There should be some examples and tests for both speed and memory use
+that demonstrate that checkpointing is useful.
+
+$comment -------------------------------------------------------------------$$
+
+$head Sparsity Patterns$$
+It may be that each set has a large overhead in a large and very sparse
+$cref/vector of sets/glossary/Sparsity Pattern/Vector of Sets/$$
+representation of a sparsity pattern.
+The user API for this representation uses
+$codei%
+	%vector%< std::set<size_t> >
+%$$
+Perhaps CppAD's API should have a sparse matrix class with the following fields
+$codei%
+	%vector%<size_t> %row%;
+	%vector%<size_t> %col%;
+	%vector%<%Type%> %val%;
+%$$
+where the vectors are arbitrary $cref/simple vectors/SimpleVector/$$.
+If the $icode val$$ vector has size zero,
+this would just be a sparsity pattern
+(and $icode row$$ and $icode col$$ vectors would have the same size).
+Otherwise, it would be a sparse matrix with elements of type $icode Type$$
+and $icode val$$ would have the
+same size as $icode row$$ and $icode col$$.
+
+
+$head check_finite$$
+Sometimes one only gets infinite value during zero order forward
+and nan when computing corresponding derivatives.
+Change $cref check_for_nan$$ to $code check_finite$$
+(not infinite or nan) so that error detection happens during zero
+order forward instead of later.
+
+$head Compilation Speed$$
+Create a library corresponding to $code AD<double>$$ so that
+one does not need to re-compile all the header files every time.
+
+$head Base Requirements$$
+Change the $cref/Base requirements/base_require/$$ to use template
+specialization instead of functions so that there is a default value
+for each function. The default would result in a
+$cref/known/cppad_assert/Known/$$ assert when the operation is used and not
+defined by the base class.
+An example of this type of template specialization can be found in
+the implementation of $cref to_string$$.
+
+$head Adolc$$
+Create a documentation page that shows how to convert Adolc commands to
+CppAD commands.
+
+$head Forward Mode Recomputation$$
+If the results of $cref forward_order$$ have already been computed and are still
+stored in the $cref ADFun$$ object (see $cref size_order$$),
+then they do not need to be recomputed and the results can just be returned.
+
+$head Iterator Interface$$
+All of the CppAD simple vector interfaces should also have an
+iterator version for the following reasons:
+$list number$$
+It would not be necessary to copy information to simple vectors
+when it was originally stored in a different type of container.
+$lnext
+It would not be necessary to reallocate memory for a result that is
+repeatedly calculated
+(because an iterator for the result container would be passed in).
+$lend
+
+
+$head Operation Sequence$$
+It is possible to detect if the
+AD of $icode Base$$
+$cref/operation sequence/glossary/Operation/Sequence/$$
+does not depend on any of the
+$cref/independent variable/glossary/Tape/Independent Variable/$$ values.
+This could be returned as an extra
+$cref seq_property$$.
+
+$head Software Guidelines$$
+The following is a list of some software guidelines taken from
+$href%http://www.boost.org/development/requirements.html#Guidelines%boost%$$.
+These guidelines are not followed by the current CppAD source code,
+but perhaps they should be:
+
+$list number$$
+Names (except as noted below)
+should be all lowercase, with words separated by underscores.
+For example, acronyms should be treated as ordinary names
+(xml_parser instead of XML_parser).
+
+$lnext
+Template parameter names should begin with an uppercase letter.
+
+$lnext
+Use spaces rather than tabs.
+Currently, CppAD uses a tabs stops at column multiples of 5.
+Five columns were chosen to avoid high levels of indenting and to allow for
+$codep
+	if( expression )
+		statement
+	else	statement
+$$
+with a tab after the else.
+Automatic conversion to actual spaces should be easy.
+
+$lend
+
+$head Tracing$$
+Add tracing the operation sequence to the user API and documentation.
+Tracing the operation sequence is currently done by changing the CppAD
+source code. Use the command
+$codep
+	grep '^# *define *CPPAD_.*_TRACE' cppad/local/*.hpp
+$$
+to find all the possible tracing flags.
+
+
+$head atan2$$
+The $cref/atan2/Atan2/$$ function could be made faster by adding
+a special operator for it.
+
+$head BenderQuad$$
+See the $cref/problem/BenderQuad/Problem/$$ with the
+current $code BenderQuad$$ specifications.
+
+$end

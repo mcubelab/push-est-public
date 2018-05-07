@@ -1,0 +1,35 @@
+$Id: lu_factor_hpp.omh 3788 2016-02-09 15:50:06Z bradbell $
+/* --------------------------------------------------------------------------
+CppAD: C++ Algorithmic Differentiation: Copyright (C) 2003-16 Bradley M. Bell
+
+CppAD is distributed under multiple licenses. This distribution is under
+the terms of the
+                    GNU General Public License Version 3.
+
+A copy of this license is included in the COPYING file of this distribution.
+Please visit http://www.coin-or.org/CppAD/ for information on other licenses.
+-------------------------------------------------------------------------- */
+
+$begin lu_factor.hpp$$
+$spell
+	Lu
+	ifndef
+	endif
+$$
+
+$section Source: LuFactor$$
+$mindex source$$
+
+
+$code
+# ifndef CPPAD_LU_FACTOR_HPP
+$pre
+$$
+# define CPPAD_LU_FACTOR_HPP
+
+$srcfile%cppad/utility/lu_factor.hpp%0%// BEGIN C++%// END C++%$$
+
+# endif
+$$
+
+$end

@@ -1,0 +1,22 @@
+// $Id: atomic.omh 3845 2016-11-19 01:50:47Z bradbell $
+/* --------------------------------------------------------------------------
+CppAD: C++ Algorithmic Differentiation: Copyright (C) 2003-16 Bradley M. Bell
+
+CppAD is distributed under multiple licenses. This distribution is under
+the terms of the
+                    GNU General Public License Version 3.
+
+A copy of this license is included in the COPYING file of this distribution.
+Please visit http://www.coin-or.org/CppAD/ for information on other licenses.
+-------------------------------------------------------------------------- */
+$begin atomic$$
+
+$section Atomic AD Functions$$
+$mindex operation$$
+
+$childtable%
+	cppad/core/checkpoint.hpp%
+	omh/atomic_base.omh
+%$$
+
+$end
